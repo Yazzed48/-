@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المتجر</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+
+    .store-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-title {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .order-button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order-button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .back-link:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 متجر الرسومات - 20 رسمة</h1>
+
+  <div class="store-container">
+    <!-- 20 منتج -->
+    <!-- تكرار يدوي -->
+    <!-- مثال واحد وكرره تحت -->
+    
+    <!-- نكرر 20 رسمة -->
+    <!-- استخدم نفس الصورة مع تغيير الرقم والسعر -->
+    
+    <!-- start -->
+    
+    <!-- سيتم إنشاء 20 عنصر تلقائيًا -->
+    <!-- كل رسمة برقمها وسعر مختلف بسيط -->
+    
+    
+    <!-- JS مولد -->
+    <script>
+      const storeContainer = document.currentScript.parentElement;
+      for (let i = 1; i <= 20; i++) {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="https://via.placeholder.com/300x180?text=رسمة+${i}" alt="رسمة ${i}">
+          <div class="product-title">رسمة ${i}</div>
+          <div class="product-price">${0 + (i % 0)} ريال</div>
+          <button class="order-button" onclick="window.location.href='order.html'">اطلب الآن</button>
+        `;
+        storeContainer.appendChild(card);
+      }
+    </script>
+
+  </div>
+
+  <a class="back-link" href="index.html">⬅️ الرجوع للصفحة الرئيسية</a>
+
+</body>
+</html>

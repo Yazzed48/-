@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <title>رسّام عُماني</title>
+  <style>
+    .top-bar {
+  text-align: right;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.login-btn {
+  background-color: hsl(222, 100%, 50%); /* أزرق */
+  color: white;              /* النص أبيض */
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* أزرق أغمق عند التمرير */
+}
+
+    body {
+        
+      font-family: 'Cairo', sans-serif;
+      background-color: #fff9f0;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      
+    }
+
+    header {
+      background-color: #b47171;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #6c584c;
+      font-size: 36px;
+    }
+
+    .bio {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    a {
+      color: #f72828;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>موقع الفنان غصن</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+  
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+  
+      @media (min-width: 600px) {
+        .button-container {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+  
+      .social-button {
+        background-color: #E1306C;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+  
+      .social-button.youtube {
+        background-color: #ffffff;
+      }
+  
+      .social-button:hover {
+        opacity: 0.9;
+      }
+  
+      .logo {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <h1>مرحباً في موقع الفنان و الرسام غصن</h1>
+  
+    <div class="button-container">
+  
+      <!-- زر إنستقرام -->
+      <a class="social-button" href="https://www.instagram.com/go_.sn" target="_blank">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        حساب إنستقرام
+      </a>
+  
+      <!-- زر يوتيوب -->
+      <a class="social-button youtube" href="https://www.youtube.com/@Ghoson_Art" target="_blank">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_(2017).svg
+        " alt="YouTube Logo">
+        قناة يوتيوب
+      </a>
+  
+    </div>
+  
+  </body>
+  </html>
+  
+      
+    <div class="top-bar">
+        <a href="login.html" class="login-link">
+          <button class="login-btn">تسجيل الدخول</button>
+        </a>
+      </div>
+      
+      
+
+  <header>
+    <h1>رسّام عُماني</h1>
+    <p class="bio"> 🇴🇲 مرحبًا بكم في المعرض الفني للفنان👨‍🎨 العُماني <strong>غصن</strong>، حيث تتجلى الألوان وتنبض التفاصيل بالحياة.</p>
+  </header>
+
+  <h2>معرض الأعمال</h2>
+  <div class="gallery">
+    <img src="نمر.jpg" alt="لوحة 1">
+    <img src="أسم غصن بالرسم.jpg" alt="لوحة 2">
+    <img src="رسم الوان.jpg" alt="لوحة 3">
+  </div>
+
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Cairo', sans-serif;
+          background-image: url('bg.png'); /* ← الخلفية */
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: rgb(0, 0, 0);
+          backdrop-filter: brightness(0.9);
+        }
+      
+        .content {
+          text-align: center;
+          padding: 100px 20px;
+          background-color: rgba(0, 0, 0, 0.5); /* طبقة شفافية خفيفة */
+          margin: 50px auto;
+          max-width: 700px;
+          border-radius: 20px;
+        }
+      
+        h1 {
+          font-size: 48px;
+          color: #00FFCC;
+        }
+      
+        p {
+          font-size: 20px;
+        }
+      </style>
+      
+  <meta charset="UTF-8">
+  <title>الصفحة الرئيسية</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f0f0f0;
+      padding: 0;
+      margin: 0;
+      position: relative; /* تحديد مكان وضع العناصر */
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      padding-top: 50px;
+    }
+
+    .welcome-message {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* تنسيق الخطوط */
+    .horizontal-lines {
+      position: absolute;
+      top: 20px; /* المسافة من الأعلى */
+      left: 20px; /* المسافة من اليسار */
+      display: flex;
+      flex-direction: column; /* ترتيب الخطوط عموديًا */
+      gap: 5px; /* المسافة بين الخطوط */
+      cursor: pointer;
+    }
+
+    .line {
+      width: 30px; /* عرض الخط */
+      height: 3px; /* سمك الخط */
+      background-color: black;
+    }
+
+    /* قائمة الجانبية التي تظهر عند الضغط */
+    .side-menu {
+      position: absolute;
+      top: 0;
+      left: -250px; /* تجعل القائمة مختفية خارج الشاشة */
+      width: 250px;
+      height: 100%;
+      background-color: #000000; /* اللون الرمادي */
+      transition: left 0.3s ease; /* حركة انزلاق القائمة */
+      padding-top: 50px; /* المسافة من أعلى القائمة */
+      box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+    }
+
+    .side-menu a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    .side-menu a:hover {
+      background-color: #555;
+    }
+
+    /* فتح القائمة */
+    .side-menu.open {
+      left: 0; /* تعرض القائمة عندما تكون مفتوحة */
+    }
+
+    /* تنسيق زر الإغلاق */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ae5454; /* لون الزر (أسود فاتح) */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .close-btn:hover {
+      background-color: #8a8a8a; /* تغير اللون عند التمرير فوق الزر */
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1> [جميع رسومات الفنان في المتجر]</h1>
+  <p class="welcome-message">تم تسجيل دخولك !</p>
+
+  <!-- إضافة ثلاثة خطوط أفقية في الجهة اليسرى -->
+  <div class="horizontal-lines" id="menuToggle">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- قائمة جانبية تظهر عند الضغط -->
+  <div class="side-menu" id="sideMenu">
+    <!-- زر الإغلاق داخل القائمة -->
+    <button class="close-btn" id="closeBtn">إغلاق</button>
+
+    <a href="store.html">المتجر</a>
+    <a href="gallery.html">🖼️ معرض الأعمال</a>
+    <a href="order.html">🖌️ طلب رسمة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact_us.html"> 📱 تواصل </a>
+  <a href="">ألعب لعبة قريبًا</a>
+
+
+  </div>
+
+  <script>
+    // الحصول على العناصر
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // إضافة حدث عند الضغط على الخطوط لفتح القائمة
+    menuToggle.addEventListener('click', function() {
+      sideMenu.classList.toggle('open'); // تفعيل / إيقاف عرض القائمة
+    });
+
+    // إضافة حدث عند الضغط على زر الإغلاق لإغلاق القائمة
+    closeBtn.addEventListener('click', function() {
+      sideMenu.classList.remove('open'); // إغلاق القائمة
+    });
+  </script>
+
+</body>
+</html>
+<style>
+    .btn-channel {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  
+    .btn-channel:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  
+  

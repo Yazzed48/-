@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f7f7f7;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>صفحة تسجيل الدخول</h1>
+  <p>ايميلك هو: admin ---- باسوورد حقك : 1234 أو 12345</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f7f7f7;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .login-form {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .submit-btn {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .error-msg {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>تسجيل الدخول</h1>
+
+  <div class="login-form">
+    <form action="#" method="POST" id="loginForm">
+      <input type="text" id="username" name="username" class="form-input" placeholder="اسم المستخدم" required><br>
+      <input type="password" id="password" name="password" class="form-input" placeholder="كلمة المرور" required><br>
+      <button type="submit" class="submit-btn">تسجيل الدخول</button>
+    </form>
+
+    <p class="signup-link">
+        هل لديك حساب؟ <a href="signup.html">إنشاء حساب جديد</a>
+      </p>
+    
+      <p class="error-msg" id="error-message"></p>
+    </div>
+
+    <p class="error-msg" id="error-message"></p>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        alert("تم تسجيل الدخول بنجاح!");
+        // Redirect or load user's page after successful login
+      } else {
+        document.getElementById("error-message").innerText = "اسم المستخدم أو كلمة المرور غير صحيحة!";
+      }
+    });
+  </script>
+
+</body>
+</html>

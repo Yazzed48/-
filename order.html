@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب رسمة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<script>
+    const form = document.getElementById('orderForm');
+    const message = document.getElementById('successMessage');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // يمنع التحديث
+  
+      // هنا تقدر ترسل البيانات عبر Formspree إذا تبي، أو تخليها محلي
+  
+      // إخفاء النموذج، وإظهار الرسالة
+      form.style.display = 'none';
+      message.style.display = 'block';
+    });
+  </script>  
+<body>
+
+  <form action="https://formspree.io/f/myzwgwpo" method="POST" style="direction: rtl; max-width: 500px; margin: auto; background-color: #f9f9f9; padding: 20px; border-radius: 12px; font-family: Arial;">
+    <h2 style="text-align: center;">طلب رسمة خاصة</h2>
+  
+    <label>الاسم الثلاثي:</label>
+    <input type="text" name="الاسم" required
+           oninvalid="this.setCustomValidity('رجاءً اكتب اسمك الثلاثي')"
+           oninput="this.setCustomValidity('')">
+  
+    <label>البريد الإلكتروني:</label>
+    <input type="email" name="البريد الإلكتروني" required
+           oninvalid="this.setCustomValidity('رجاءً اكتب البريد الإلكتروني بشكل صحيح')"
+           oninput="this.setCustomValidity('')">
+  
+    <label>العمر:</label>
+    <input type="number" name="العمر" required
+           oninvalid="this.setCustomValidity('رجاءً اكتب عمرك')"
+           oninput="this.setCustomValidity('')">
+  
+    <label>رقم الهاتف:</label>
+    <input type="tel" name="رقم الهاتف" required placeholder="05XXXXXXXX"
+           oninvalid="this.setCustomValidity('رجاءً اكتب رقم الهاتف بشكل صحيح')"
+           oninput="this.setCustomValidity('')">
+  
+    <label>اكتب طلبك:</label>
+    <textarea name="طلبك" rows="4" required
+              oninvalid="this.setCustomValidity('رجاءً اكتب طلبك بالتفصيل')"
+              oninput="this.setCustomValidity('')"></textarea>
+  
+    <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 8px; margin-top: 10px; cursor: pointer;">
+      إرسال الطلب
+    </button>
+  
+    <br><br>
+    <button type="button" onclick="window.location.href='index.html'" style="background-color: #6c757d; color: white; padding: 8px 16px; border: none; border-radius: 8px; cursor: pointer;">
+      الرجوع للصفحة الرئيسية
+    </button>
+  </form>
+  
